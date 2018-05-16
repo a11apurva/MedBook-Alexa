@@ -1,0 +1,3837 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "med book",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "how to use ",
+                        "i cannot understand",
+                        "manual",
+                        "i require help",
+                        "help me",
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "nope",
+                        "no",
+                        "thank you",
+                        "thanks",
+                        "bye",
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "diseaseIntent",
+                    "slots": [
+                        {
+                            "name": "disease",
+                            "type": "DISEASE"
+                        }
+                    ],
+                    "samples": [
+                        "tell me about the {disease}",
+                        "about the disease {disease}",
+                        "ask med book about the disease {disease}",
+                        "about {disease}",
+                        "ask med book about {disease}",
+                        "what disease is {disease}",
+                        "ask med book what disease is {disease}",
+                        "what is {disease}",
+                        "ask med book what is {disease}",
+                        "tell me about {disease}"
+                    ]
+                },
+                {
+                    "name": "usageIntent",
+                    "slots": [
+                        {
+                            "name": "drugName",
+                            "type": "DRUGNAME"
+                        }
+                    ],
+                    "samples": [
+                        "the use of {drugName}",
+                        "ask med book the use of {drugName}",
+                        "the usage of {drugName}",
+                        "ask med book the usage of {drugName}",
+                        "what are the usages of {drugName}",
+                        "ask med book what are the usages of {drugName}",
+                        "what are the usage of {drugName}",
+                        "ask med book what are the usage of {drugName}",
+                        "usages of {drugName}",
+                        "ask med book usages of {drugName}",
+                        "about use of {drugName}",
+                        "ask med book about use of {drugName}",
+                        "what is {drugName} used for",
+                        "ask med book what is {drugName} used for",
+                        "use of {drugName}",
+                        "ask med book use of {drugName}",
+                        "usage of {drugName}",
+                        "ask med book usage of {drugName}",
+                        "what is the use {drugName}",
+                        "ask med book what is the use of {drugName}"
+                    ]
+                },
+                {
+                    "name": "alternateIntent",
+                    "slots": [
+                        {
+                            "name": "drugNameA",
+                            "type": "DRUGNAME"
+                        }
+                    ],
+                    "samples": [
+                        "what is the alternative of {drugNameA}",
+                        "alternates of {drugNameA}",
+                        "ask med book the alternates of {drugNameA}",
+                        "the alternate of {drugNameA}",
+                        "ask med book the alternate of {drugNameA}",
+                        "the alternatives of {drugNameA}",
+                        "ask med book the alternatives of {drugNameA}",
+                        "what are the alternatives of {drugNameA}",
+                        "ask med book what are the alternatives of {drugNameA}",
+                        "the alternative of {drugNameA}",
+                        "ask med book the alternative of {drugNameA}",
+                        "what is alternate for {drugNameA}",
+                        "ask med book what is alternate for {drugNameA}",
+                        "what is alternative for {drugNameA}",
+                        "ask med book what is alternative for {drugNameA}",
+                        "what is the alternative to {drugNameA}",
+                        "ask med book what is the alternative to {drugNameA}",
+                        "what is the alternative for {drugNameA}",
+                        "ask med book what is the alternatives for {drugNameA}",
+                        "alternative to {drugNameA}",
+                        "ask med book alternative to {drugNameA}",
+                        "alternate to {drugNameA}",
+                        "ask med book alternate to {drugNameA}",
+                        "alternative of {drugNameA}",
+                        "ask med book alternative of {drugNameA}",
+                        "alternate of {drugNameA}",
+                        "ask med book alternate of {drugNameA}",
+                        "what is alternative of {drugNameA}",
+                        "ask med book what is alternative to {drugNameA}",
+                        "what is alternate of {drugNameA}",
+                        "ask med book what is alternate of {drugNameA}"
+                    ]
+                },
+                {
+                    "name": "sideEffectIntent",
+                    "slots": [
+                        {
+                            "name": "drugNameC",
+                            "type": "DRUGNAME"
+                        }
+                    ],
+                    "samples": [
+                        "what is the side effects of {drugNameC}",
+                        "ask med book what is the side effects of {drugNameC}",
+                        "what is the side effect of {drugNameC}",
+                        "ask med book what is the side effect of {drugNameC}",
+                        "what is the side effect of {drugNameC}",
+                        "ask med book what is the side effect of {drugNameC}",
+                        "about the side effect of {drugNameC}",
+                        "ask med book about the side effect of {drugNameC}",
+                        "the side effects of {drugNameC}",
+                        "ask med book the side effects of {drugNameC}",
+                        "the side effect of {drugNameC}",
+                        "ask med book the side effect of {drugNameC}",
+                        "what are the side effect of {drugNameC}",
+                        "ask med book what are the side effect of {drugNameC}",
+                        "side effect of {drugNameC}",
+                        "ask med book side effect of {drugNameC}",
+                        "side effects of {drugNameC}",
+                        "ask med book side effects of {drugNameC}",
+                        "what are the side effects of {drugNameC}",
+                        "ask med book what are the side effects of {drugNameC}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "DISEASE",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "malaria"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vomiting"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fracture"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "abducens nerve disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "abidi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "accessory nerve disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "acoustic neuroma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "acrocephalosyndactylia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "adult central nervous system primitive neuroectodermal neoplasm"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "adult neuronal ceroid lipofuscinosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alopecia contractures dwarfism mental retardation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alopecia mental retardation syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alopecia,"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amyloid neuropathy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amyloidosis of gingiva and"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amyotrophic lateral sclerosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amyotrophy, neurogenic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "anencephaly"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "angioma hereditary neurocutaneous"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "aniridia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "aortic valve stenosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "arthrogryposis epileptic seizures migrational brain disorder"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "arthrogryposis multiplex congenita neurogenic type"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ataxia neuropathy spectrum"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "athabaskan brainstem dysgenesis syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "auditory neuropathy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "autonomic nervous system disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "autosomal dominant neuronal ceroid lipofuscinosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bannayan-riley-ruvalcaba syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bardet-biedl syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "batten disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bell's palsy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "birk-barel syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "brain cancer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "brain glioblastoma multiforme"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "brain stem glioma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "brain stem infarction"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "campomelic dysplasia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "canavan disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "central nervous system tuberculosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "central neurocytoma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cerebral"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cerebral cavernous"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cerebral neuroblastoma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ceroid lipofuscinosis neuronal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cervical hypertrichosis peripheral neuropathy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "charcot-marie-tooth disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "charcot-marie-tooth disease type"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "childhood ataxia with central nervous system"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "childhood central nervous system primitive neuroectodermal neoplasm"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chorea-acanthocytosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "christianson syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chronic infantile neurological cutaneous articular syndrome chronic infantile neurological cutaneous articular syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cleidocranial dysplasia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "col4a1-related brain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "coloboma, cleft"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "common peroneal nerve lesion"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "congenital"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "congenital neuronal ceroid lipofuscinosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "conversion disorder"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "costello syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cranial nerve disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cranial nerve malignant neoplasm"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "crouzon syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cyprus facial neuromusculoskeletal syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "diabetic neuropathy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dislocation of ear ossicle"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "distal hereditary motor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "distal hereditary motor neuropathy type v"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "distal monosomy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dnmt1-related"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "endometriosis."
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "epilepsy, female"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "episodic ataxia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fabry disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "facial onset sensory and motor neuronopathy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "familial congenital fourth cranial nerve palsy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "familial encephalopathy with neuroserpin inclusion bodies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "familial neurocardiogenic syncope"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fatty acid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fg syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fibrodysplasia ossificans progressiva"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fourth cranial nerve palsy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fragile x syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fragile xe syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fucosidosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gaucher disease type"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "genetic brain disorders"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "giant axonal neuropathy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "glycogen storage disease iv"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "guillain-barre syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hair defect with photosensitivity and mental retardation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hereditary diffuse leukoencephalopathy with spheroids"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hereditary hemorrhagic telangiectasia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hereditary motor and sensory neuropathy vi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hereditary motor and sensory neuropathy with agenesis of the corpus callosum"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hereditary neuralgic amyotrophy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hereditary neuropathies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hereditary neuropathy with liability to pressure palsy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hereditary sensory and autonomic neuropathy iv"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hereditary sensory and autonomic neuropathy type"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hereditary sensory and autonomic neuropathy type ii"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hereditary sensory and autonomic neuropathy type v"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hereditary sensory and autonomic neuropathy type vi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hereditary sensory neuropathy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hydrocephalus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hypertrophic neuropathy of"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hypochondroplasia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hypoglossal nerve disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hypogonadism,"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hypomyelination with brainstem and spinal cord involvement and leg spasticity"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hypospadias mental retardation goldblatt type"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "infantile neuroaxonal dystrophy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "inner ear cancer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "intestinal pseudoobstruction neuronal chronic idiopathic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "jensen syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "johnson neuroectodermal syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "juvenile batten disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ladd syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "late-infantile neuronal ceroid lipofuscinosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "legius syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lesion of sciatic nerve"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "leukoencephalopathy with brain stem and spinal cord involvement and lactate elevation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lubs"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lyme disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "malignant melanocytic neoplasm of the peripheral nerve sheath"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "malignant neoplasm of acoustic nerve"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "malignant peripheral nerve sheath tumor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "malignant peripheral neuroectodermal tumor of the cervix uteri"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mcleod neuroacanthocytosis syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "megalocornea mental retardation syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "melanotic neuroectodermal tumor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "microcephaly brain defect spasticity hypernatremia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "microphthalmia mental deficiency"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "miles-carpenter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mitochondrial neurogastrointestinal encephalopathy disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "moebius syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "motor neuron disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "motor neuropathy peripheral with dysautonomia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "motor peripheral neuropathy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mowat-wilson syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mucopolysaccharidosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mucopolysaccharidosis ii"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mucopolysaccharidosis iii"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mucopolysaccharidosis vi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "multifocal motor neuropathy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "multiple epiphyseal dysplasia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "muscle eye brain disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nerve compression syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nerve fibre bundle defect"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neural tube defects"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neuroacanthocytosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neuroaxonal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neuroblastoma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neurocutaneous melanosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neurodegeneration with brain iron accululation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neurodegeneration with brain iron accumulation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neurodegeneration with brain iron accumulation disorders"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neuroferritinopathy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neurofibromatosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neurogenic diabetes insipidus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neurogenic thoracic outlet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neurohypophyseal diabetes insipidus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neurologic diseases"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neuromuscular disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neuromyelitis optica"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neuronal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neuropathy ataxia retinitis pigmentosa syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neuropathy hereditary sensory and autonomic type"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neuropathy,"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neuropathy, distal hereditary"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neurosarcoidosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neurosyphilis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neurotic disorder"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "noonan syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "norrie disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "northern epilepsy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "oculomotor nerve paralysis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "olfactory nerve disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "optic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "optic nerve disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "optic nerve neoplasm"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pachygyria with mental retardation and seizures"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "painful orbital and systemic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "paraneoplastic neurologic disorders"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "parkinsonism, early onset with mental retardation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "partial"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "partington"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pelizaeus-merzbacher disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "peters plus syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "phenylketonuria"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pick's disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pili torti developmental delay neurological abnormalities"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "plagiocephaly and"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "plantar nerve lesion"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "polyneuropathy mental retardation acromicria premature menopause"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "prieto"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "primary"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "primary angiitis of the central nervous system"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "primary melanoma of the central nervous system"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "primitive neuroectodermal tumor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "prion disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "progeria"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pseudoachondroplasia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "psychotic disorder"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pterygia, mental retardation and distinctive craniofacial features"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "radioulnar synostosis with"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "refsum disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "respiratory failure"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "retinopathy pigmentary mental retardation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rothmund-thomson syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "scapuloperoneal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "schimke"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sclerosing bone dysplasia mental retardation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "small fiber neuropathy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "smith-lemli-opitz syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "snyder-robinson syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "spastic paraplegia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "spastic paraplegia epilepsy mental retardation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "spastic paraplegia neuropathy poikiloderma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "spinal cord disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "spinal cord glioma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "spinal cord injury"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "spinal cord neuroblastoma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "spinal cord primitive neuroectodermal neoplasm"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "spinocerebellar ataxia with axonal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "suppression amblyopia"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "supratentorial primitive neuroectodermal tumor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tarsal tunnel syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tetralogy of fallot"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "third cranial nerve disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "total"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "toxic encephalopathy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "trochlear nerve disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tuberous sclerosis"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "turner syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ulna hypoplasia with mental retardation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ulnar nerve lesion"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vagus nerve disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vestibulocochlear nerve disease"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "visceral neuropathy familial"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "werner syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "white matter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "x-linked mental retardation gustavson type"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "x-linked mental retardation type wittwer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "zunich neuroectodermal syndrome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "diarrhea"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "DRUGNAME",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "paracetamol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "flagyl"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "acebrophylline"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "collagen peptide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "abacavir"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "abciximab"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "acamprosate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "acarbose"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "aceclofenac"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "acenocoumarol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "acetazolamide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "aspirin(asa)"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "acitretin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "acyclovir"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "adapalene"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "adefovir"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "adenosine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "adrenochrome monosemicarabzone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "albendazole"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "albuterol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alfacalcidol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rutin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alendronic acid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alginic acid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alfuzosin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "aliskiren"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "allantoin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "allopurinol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "allylestrenol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "aloe vera"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alpha lipoic acid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alprazolam"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "aluminium hydroxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amantadine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ambroxol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amifostine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amikacin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amiloride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amino acids"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "aminophylline"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amiodarone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amisulpride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amitriptyline"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amlodipine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ammonium chloride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amoxapine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amoxicillin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amphotericin b"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ampicillin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "amylmetacresol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "anastrozole"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "aprepitant"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "aripiprazole"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "artemether"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "artesunate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "asparaginase"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "astemizole"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "atazanavir"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "atenolol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "atomoxetine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "atorvastatin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "atracurium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "atropine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "azathioprine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "azelastine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "azithromycin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "aztreonam"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bacampicillin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bacillus clausii"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "baclofen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "balofloxacin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "balsalazide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bambuterol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "beclometasone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bemiparin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "benazepril"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "benfotiamine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "benidipine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "benserazide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "benzalkonium chloride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "benzocaine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "benzoic acid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "benzonatate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "benzoyl peroxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "benzthiazide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "benzyl alcohol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "benzyl benzoate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "benzyl nicotinate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "betahistine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "betamethasone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "betaxolol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bethanechol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bevacizumab"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bezafibrate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bicalutamide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bimatoprost"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "biotin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bisacodyl"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "peptone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bisoprolol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bleomycin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "boric acid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "botulinum toxin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "brimonidine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bromelain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bromfenac"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bromocriptine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "buclizine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "budesonide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bupivacaine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "buprenorphine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "calamine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bupropion"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cabergoline"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "caffeine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "calcipotriol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "calcitonin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "calcitriol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "calcium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "calcium folinate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "camostat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "camphor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "camylofin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "candesartan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "capecitabine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "capreomycin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "capsaicin based rubefacients"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "captopril"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carbamazepine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carbidopa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carbimazole"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carbocisteine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carboplatin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carisoprodol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carvedilol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "caspofungin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cefaclor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cefadroxil"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cefazolin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cefdinir"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cefditoren"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cefepime"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cefetamet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cefixime"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cefoperazone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cefotaxime"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cefpirome"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cefpodoxime"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cefprozil"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ceftazidime"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ceftizoxime"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ceftriaxone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cefuroxime"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "celecoxib"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cetalkonium chloride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cetirizine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cetrimide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cetrorelix"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chlordiazepoxide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chlorambucil"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chloramphenicol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chlorbutol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chlorhexidine gluconate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chlormezanone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chloroquine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chlorphenesin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chlorpheniramine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chlorpromazine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chlorpropamide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chlorthalidone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chlorzoxazone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "choline salicylate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "choline theophyllinate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chondroitin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chromium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chromium picolinate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chymotrypsin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ciclesonide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cilastatin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cilnidipine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cilostazole"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cinacalcet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cinnarizine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ciprofloxacin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cisapride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cisplatin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "citalopram"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "citicoline"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "citric acid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clarithromycin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clavulanic acid"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clemastine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clidinium"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clindamycin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clioquinol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clobazam"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clobetasol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clobetasone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clofazimine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clomifene"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clomipramine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clonazepam"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clonidine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clopidogrel"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clotrimazole"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cloxacillin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clozapine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "coal tar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "codeine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "coenzyme"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "colchicine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "colistimethate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "colistin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "copper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "copper sulphate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "curcuma longa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cyclobenzaprine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cyclopentolate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cyclophosphamide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cycloserine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cyproheptadine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cyproterone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cytarabine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dacarbazine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dactinomycin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dalteparin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "danazol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dapoxetine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dapsone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "darifenacin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "daunorubicin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "deferoxamine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "deflazacort"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "demeclocycline"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "desloratadine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "desmopressin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "desogestrel"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "desvenlafaxine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dexamethasone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dexchlorpheniramine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dexibuprofen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dextran"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dextromethorphan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dextropropoxyphene"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dextrose"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "diacerein"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "diastase"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "diazepam"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dibucaine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "diclofenac"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dicloxacillin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dicyclomine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "3 mix"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "adalene"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "addtears"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "adelphane esidrex"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alpha"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alphadol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alprax"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alzolam"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ambulax"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ambulax m"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "anxit"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "apdrops"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "aquabact"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "arkamin h"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "arkamin-h"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "arkaminh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ascoril ls"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "baraclude"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "betaderm g"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "betaferon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "betagel g"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "betamil gm"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "betnesol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "biovac a"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "blu dye"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bro zedex"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bro zedex ls"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bro-zedex ls"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "brozedex ls"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "brozeet ls"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "budate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "budecort"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "caberlin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cabgolin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "camforte"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "candid b"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "candid-b"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "candidb"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "candiderma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "candiderma plus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cb lin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cb-lin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cblin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cetrolix"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "champix"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ciplox"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ciprolar fc"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clinmi skin a"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clobetamil g"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clop g"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clop s s"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clop-g"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clop-s s"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clopg"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clops s"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clostar s"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clostar-s"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "clostars"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cognolin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "contiflo icon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "contiflo od"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cortimom"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cosvate g"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "crolim power"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cyclodrop"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cyclomune"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "d.n.s"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "daivobet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "decdan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "desowen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dexona"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dipgenta"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "diprovate g"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "diprovate plus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "diprovate rd"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dns water"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dorzox t"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dutagen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dutalfa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dutas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dynapres"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eco tears"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "efcorlin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "elocon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "enteca"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "entehep"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "epiduo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "epina"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "esynos"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "etilite"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eumosone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eyemist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "finast t"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "flomex"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "flucort"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "flucort h"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "flucort skin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "flucort-h"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "flucorth"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "flucos"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "flur"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "flutibact"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "flutivate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "freedom"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fyzen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gatiquin p"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "genticyn"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "geriflo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "geriflo d"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gflotas d"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gflotas-d"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gflotasd"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ginette"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "glimisave mv forte"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "glucoryl mv"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "glucoryl-mv"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "glucorylmv"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gtn"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "halotop s"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "halovate s"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "halox"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ivrea"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kansel b"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "keracnyl"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ketriplin c"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lanoxin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lashisma"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lobate gm"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lobate gm skin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lobate gn"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lobate skin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "loette"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lomofen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lomotil"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lotechek"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lotril bg"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lumigan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "maxtra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "megavog"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "momate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "momate f"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "momisoft"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mone"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "moxiblu d"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "moxiblu-d"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "moxiblud"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "moxicip"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "moxluv kt"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "myonit"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "myonit insta"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "n.s"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nasivion advanced advance"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nasivion no"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neosporin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nepaflam od"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neuromin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nevanac"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nexret"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nogestol"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "norep"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "norlevo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "normal saline"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "novalgin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "novonorm"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nvm"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ofaxd x"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "orasep"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "otrivin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ovral g"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ovurelix"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "oxop"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "palozac"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "polaramine pead"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "propysalic nf"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "religrast"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "restyl"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rexidin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ringer lactate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "scabanca c"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "scabimide"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "scarab"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sebowash"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sensorcaine"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "shanvac b"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sigmaderm n"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sinarest"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sodium chloride"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "solopose"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "stabose m"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "stemin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sternon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sternon s"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sternon-s"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sternons"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "suprabenz"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "suprabenz plus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "surfaz sn"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "synadil"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tacloran"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tacmod forte"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tamlocept"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tamlocept d"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tamlocept-d"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tamloceptd"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tamsin d"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tamsulin d"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tears naturale ii"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tencalm"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tenovate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tenovate m"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "timolong"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "topisal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tri vobit forte"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tri-vobit forte"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "trika"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "trivobit forte"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "typhim vi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "urimax f"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "veltam plus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "veltam-plus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "veltamplus"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vibact"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "viscodyne ls"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "voglimac gm"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "voglistar md"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "voglitab m"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "voglitor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "volix"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "volix cp"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vozuca"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vozuca m"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "winolap"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "zole f"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "norflox"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
