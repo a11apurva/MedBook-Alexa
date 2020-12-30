@@ -7,7 +7,7 @@ alt="IMAGE ALT TEXT HERE" width="100" height="100" border="10" /></a>
 
 It is based on [TrueMD](http://www.truemd.in/#/home/search) which a leading platform for open source database for all medicines and their related Information, and [HealthOS](https://www.healthos.co/#/home/search) which provides several amazing APIs in the medical field!
 
-MedBook is learning as you do. Many new feature are on it's way to make this your favorite Medical Assistant
+MedBook is learning as you do. Many new feature are on it's way to make this your favorite Medical Assistant.
 
 ### Looking for collaboration to add more features
 
